@@ -9,7 +9,9 @@
     "console": "node console.js",
     "cli": "node run.js",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "ganache": "node run.js --stay-open --start-ganache --start-server 'false' --start-web-socket 'false'",
+    "server": "node run.js --stay-open --start-ganache 'false' --start-server --start-web-socket 'true'"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.3",
