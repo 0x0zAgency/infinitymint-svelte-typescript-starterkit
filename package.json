@@ -1,0 +1,32 @@
+{
+  "name": "infinitymint-svelte-starterkit",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "console": "node console.js",
+    "cli": "node run.js",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.0.3",
+    "@tsconfig/svelte": "^4.0.1",
+    "svelte": "^3.57.0",
+    "svelte-check": "^2.10.3",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "ganache": "^7.8.0",
+    "infinitymint": "^1.12.3",
+    "infinitymint-client": "^3.1.0",
+    "ts-node": "^10.9.1"
+  },
+  "_moduleAliases": {
+    "@app": "./node_modules/infinitymint/dist/app/"
+  }
+}
